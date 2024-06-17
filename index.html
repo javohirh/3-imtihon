@@ -21,40 +21,57 @@
       <div class="hero">
         <div class="hero__content">
           <div class="hero__text">
-            <h2>Поставщик Дальнего Востока</h2>
+            <h1>Поставщик Дальнего Востока</h1>
             <p>
               Наши клиенты получают полный спектр услуг по работе с Китаем.
               Начиная с подбора производителя заканчивая доставкой товара до
               двери. Настолько прозрачных сделок с Китаем вы еще не
               осуществляли.
             </p>
-            <span>Узнать больше</span>
+            <a href="">Узнать больше</a>
             <hr class="hero__hr" />
           </div>
           <div class="hero__img">
-            <img src="./images/hero-img.png" alt="" />
+            <picture>
+              <source
+                srcset="./images/hero-mobile-img.png"
+                media="(max-width: 690px)"
+              />
+              <source
+                srcset="./images/hero-tablet-img.png"
+                media="(max-width: 1024px)"
+              />
+
+              <img src="./images/hero-img.png" alt="" />
+            </picture>
           </div>
         </div>
         <div class="hero__bottom">
-          <div class="hero__cards">
-            <div class="hero__card">
-              <img src="./images/hero-bottom-1.svg" alt="" />
+          <div class="hero__card">
+            <img src="./images/hero-bottom-1.svg" alt="" />
+            <div>
               <h4>Поиск производителей по товару</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod incididunt ut.
               </p>
             </div>
-            <div class="hero__card">
-              <img src="./images/hero-bottom-2.svg" alt="" />
+          </div>
+          <div class="hero__card hero__card-two">
+            <hr class="hr__left" />
+            <hr class="hr__right" />
+            <img src="./images/hero-bottom-2.svg" alt="" />
+            <div>
               <h4>Поиск конкретного производителя</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod incididunt ut.
               </p>
             </div>
-            <div class="hero__card">
-              <img src="./images/hero-bottom-3.svg" alt="" />
+          </div>
+          <div class="hero__card">
+            <img src="./images/hero-bottom-3.svg" alt="" />
+            <div>
               <h4>Доставка образцов товаров</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

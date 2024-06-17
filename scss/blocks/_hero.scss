@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+.hero {
+  margin-top: 109px;
+  margin-bottom: 67px;
+  &__content {
+    @include flex;
+    h1 {
+      @include text-style(600, 52px, 65px, $secondary);
+      max-width: 610px;
+      margin-bottom: 40px;
+    }
+    p {
+      @include text-style(400, 16px, 24px, $primary);
+      max-width: 525px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      @include text-style(700, 16px, 24px, $secondary);
+    }
+  }
+  &__hr {
+    width: 104px;
+    height: 3px;
+    border: none;
+    background-color: #ffce50;
+    margin-top: 10px;
+  }
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0px 4px 20px 0 #00000015;
+    border-radius: 20px;
+    margin-top: 67px;
+    margin-bottom: 67px;
+    .hero__card {
+      padding: 40px 64px 56px 100px;
+      img {
+        margin-bottom: 24px;
+      }
+      h4 {
+        @include text-style(600, 20px, 27px, $secondary);
+        margin-bottom: 16px;
+      }
+      p {
+        @include text-style(400, 16px, 24px, $primary);
+      }
+    }
+    .hero__card-two {
+      position: relative;
+
+      hr {
+        background-color: #d7d7dd;
+        width: 1px;
+        height: 261px;
+        border: none;
+        position: absolute;
+      }
+      .hr__left {
+        top: auto;
+        left: 32px;
+      }
+      .hr__right {
+        top: auto;
+        right: -36px;
+      }
+    }
+  }
+}
