@@ -95,7 +95,8 @@
         @include text-style(600, 18px, 24px, $secondary);
       }
       p {
-        @include text-style(400, 15px, 22px, $primary) max-width: 291px;
+        @include text-style(400, 15px, 22px, $primary);
+        max-width: 291px;
       }
       h5 {
         @include text-style(600, 15px, 20px, $secondary);
