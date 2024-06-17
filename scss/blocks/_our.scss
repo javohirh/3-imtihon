@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+.our {
+  h2 {
+    @include text-style(600, 48px, 60px, $secondary);
+  }
+  > p {
+    @include text-style(400, 16px, 24px, $primary);
+    max-width: 667px;
+    margin-top: 32px;
+    margin-bottom: 56px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 212px;
+  }
+  &__card {
+    box-shadow: 0px 4px 15px 0 #00000012;
+    border-radius: 10px;
+    h4 {
+      @include text-style(600, 20px, 27px, $secondary);
+      margin-top: 24px;
+      margin-bottom: 16px;
+      padding: 0 32px;
+    }
+    p {
+      @include text-style(400, 16px, 24px, $primary);
+      max-width: 291px;
+      margin-bottom: 32px;
+      padding: 0 32px;
+    }
+    h5 {
+      @include text-style(600, 16px, 21px, $secondary);
+      padding: 0 32px;
+    }
+    .our__hr {
+      width: 86px;
+      height: 3px;
+      border: none;
+      background-color: #ffce50;
+      margin: 0 32px 32px;
+    }
+  }
+}

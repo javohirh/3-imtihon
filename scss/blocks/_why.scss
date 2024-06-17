@@ -1,0 +1,45 @@
+@use "./variables" as *;
+
+.why {
+  &__bg {
+    background-color: #0b7572;
+    background-repeat: no-repeat;
+    height: 453px;
+    margin-bottom: 72px;
+    position: relative;
+    h2 {
+      @include text-style(600, 48px, 60px, #fff);
+
+      max-width: 362px;
+      padding-top: 178px;
+      margin-left: 90px;
+    }
+  }
+
+  &__img {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 69% 100%, 21% 0);
+    clip-path: polygon(100% 0, 100% 100%, 60% 100%, 34% 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__cards {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 176px;
+    .why__card {
+      @include flex;
+      gap: 40px;
+      margin-bottom: 64px;
+      h4 {
+        @include text-style(600, 20px, 27px, $secondary);
+        margin-bottom: 16px;
+      }
+      p {
+        @include text-style(400, 16px, 24px, $primary);
+        max-width: 291px;
+      }
+    }
+  }
+}
