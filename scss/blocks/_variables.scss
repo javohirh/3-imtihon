@@ -1,0 +1,15 @@
+$primary: #6b6b6c;
+$secondary: #363738;
+
+@mixin text-style($weight, $size, $height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $primary;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
