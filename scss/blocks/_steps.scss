@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+.steps {
+  h2 {
+    margin-bottom: 48px;
+  }
+  &__card {
+    @include flex;
+    justify-content: unset;
+    gap: 56px;
+    margin: auto;
+    max-width: 1183px;
+    margin-bottom: 24px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px 0px #0000001f;
+    h4 {
+      @include text-style(600, 20px, 25px, $secondary);
+      margin-bottom: 24px;
+    }
+    p {
+      @include text-style(400, 16px, 24px, $primary);
+      max-width: 586px;
+    }
+  }
+  &__hr {
+    width: 86px;
+    height: 3px;
+    background-color: #ffce50;
+    border: none;
+    margin-bottom: 24px;
+  }
+  .logos__card:nth-child(odd) {
+    border-right: 1px solid;
+  }
+}

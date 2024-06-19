@@ -70,6 +70,9 @@
     }
   }
   .our {
+    h2 {
+      @include text-style(600, 44px, 55px, $secondary);
+    }
     &__cards {
       grid-template-columns: 1fr;
     }
@@ -82,6 +85,69 @@
       p {
         max-width: 100%;
       }
+    }
+  }
+  .clients {
+    height: fit-content;
+    h2 {
+      padding-top: 68px;
+      margin: 0;
+      align-self: baseline;
+      margin-left: 36px;
+    }
+    &__table {
+      margin-top: 48px;
+    }
+    &__main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .steps {
+    &__card {
+      img {
+        display: none;
+      }
+      p {
+        max-width: 586px;
+      }
+    }
+  }
+  .logos {
+    &__cards {
+      justify-content: center;
+    }
+    &__card {
+      border-right: none;
+      width: 50%;
+    }
+    .logos__card:nth-child(odd) {
+      border-right: 1px solid #d7d7dd;
+    }
+  }
+  .team {
+    &__card {
+      flex-direction: column;
+    }
+  }
+  .contacts {
+    &__main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  iframe {
+    height: 405px;
+    margin-bottom: 59px;
+  }
+  .footer {
+    gap: 0;
+    justify-content: space-between;
+    padding-top: 41px;
+
+    &__list {
+      gap: 30px;
     }
   }
 }

@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.logos {
+  h2 {
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+  &__cards {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    h4 {
+      @include text-style(600, 20px, 27px, $secondary);
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 14px;
+    }
+    p {
+      @include text-style(400, 14px, 21px, $primary);
+      text-align: center;
+    }
+  }
+  &__card {
+    padding-right: 73px;
+    text-align: center;
+    border-right: 1px solid #d7d7dd;
+    width: 310px;
+  }
+  .logos__card:nth-child(4) {
+    border-right: none;
+  }
+  .logos__card:nth-child(8) {
+    border-right: none;
+  }
+}

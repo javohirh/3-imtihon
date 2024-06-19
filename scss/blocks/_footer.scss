@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+footer {
+  background-color: #0b7572;
+  height: 365px;
+  color: #fff;
+  > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer {
+  @include flex;
+  justify-content: unset;
+  gap: 200px;
+  padding-top: 80px;
+
+  &__list {
+    @include flex;
+    align-items: unset;
+    gap: 97px;
+    a {
+      @include text-style(500, 13px, 19px, #ffffff);
+      padding-bottom: 25px;
+      display: block;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  &__logo {
+    align-self: flex-start;
+  }
+  &__img {
+    > img {
+      margin-bottom: 40px;
+      margin-right: 20px;
+    }
+  }
+  &__arrow {
+    @include flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ff9619;
+    margin-top: 40px;
+  }
+}

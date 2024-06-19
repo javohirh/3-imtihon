@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+.contacts {
+  margin-bottom: 46px;
+  h2 {
+    margin-bottom: 72px;
+  }
+  &__main {
+    @include flex;
+  }
+  &__phone {
+    @include flex;
+    justify-content: unset;
+    gap: 36px;
+    margin-bottom: 44px;
+    p {
+      @include text-style(400, 14px, 21px, $primary);
+      margin-bottom: 8px;
+    }
+    h5 {
+      @include text-style(600, 20px, 24px, $secondary);
+    }
+  }
+  &__right {
+    background-color: #e9eaf2;
+    border-radius: 5px;
+    padding: 40px;
+  }
+  .contact-rigth__content {
+    @include flex;
+    justify-content: unset;
+    gap: 56px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f9f9fb;
+    margin-bottom: 48px;
+    p {
+      @include text-style(400, 16px, 20px, $primary);
+      width: 175px;
+    }
+    h6 {
+      @include text-style(600, 16px, 20px, $secondary);
+      max-width: 443px;
+    }
+  }
+}
+iframe {
+  width: 100%;
+  height: 667px;
+  margin-bottom: 166px;
+  border-radius: 20px;
+}

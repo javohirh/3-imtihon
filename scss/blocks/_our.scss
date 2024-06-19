@@ -19,6 +19,9 @@
   &__card {
     box-shadow: 0px 4px 15px 0 #00000012;
     border-radius: 10px;
+    img {
+      max-width: 100%;
+    }
     h4 {
       @include text-style(600, 20px, 27px, $secondary);
       margin-top: 24px;
